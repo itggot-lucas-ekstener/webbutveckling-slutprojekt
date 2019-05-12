@@ -3,13 +3,13 @@ let menu_icon = document.querySelector(".menu_icon")
 let menu_icon_alt = document.getElementById('nav-icon3');
 let dark = document.querySelector(".dark")
 dark.addEventListener('click', menuToggle)
+dark.addEventListener('click', iconTransform)
 let header = document.querySelector(".header")
 
 
 function menuToggle(event){
     menu.classList.toggle("hidden")
     dark.classList.toggle("hidden_dark")
-    header.classList.toggle("header")
 }
 
 function iconTransform(event){
