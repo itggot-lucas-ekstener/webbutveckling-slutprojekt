@@ -6,39 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>The Bass Guitar</title>
 </head>
 <body>
     <div class="wrapper index_wrapper">
         <header class="header">
-            <div class="menu_button_area">
-                <div class="menu_button" onclick="menuToggle(), iconTransform()">
-                    <!-- <a class="material-icons menu_icon">menu</a> -->
-                    <div id="nav-icon3">
+                <button class="nav_button" onclick="navToggle(), iconTransform()">
+                    <div class="nav-icon3">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </div>
-            </div>
-            <div class="header_text">The Bass Guitar</div>   
+                </button>
+            <label class="header_text">The Bass Guitar</label>   
         </header>
-        <menu class="hidden">
-            <a href="index.html" class="menu_item">Home</a>
-            <a href="first_steps.html" class="menu_item">The First Steps</a>
-            <a href="instrument.html" class="menu_item">The Instrument</a>
-            <a href="about.html" class="menu_item">About</a>
-        </menu>
+        <nav class="hidden">
+            <a href="index.html" class="nav_item">Home</a>
+            <a href="first_steps.html" class="nav_item">The First Steps</a>
+            <a href="instrument.html" class="nav_item">The Instrument</a>
+            <a href="about.html" class="nav_item">About</a>
+        </nav>
         <div class="dark hidden_dark"></div>
         <main>
-            <div class="bass_image"></div>
-            <div class="introduction">
+            <!-- <picture src="img/standing_bass_transparent.png" class="bass_image"></picture> -->
+            <img src="img/standing_bass_transparent.png" class="bass_image">
+            <summary class="introduction">
                 <h2>Introduction:</h2>
-                <p>The site is for those of you who want to learn more about or start playing the bass guitar but do not know where to start. The purpose is to inform about the instrument itself and a little bit about how to start playing.</p>
-            </div>
+                <p>The site is for those of you who want to learn more about or start playing the bass guitar but do not know where to start. The purpose is to inform about the instrument itself and a little bit about how to start playing. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa obcaecati excepturi vitae nostrum tenetur consequuntur aut, ipsam quae temporibus iusto earum labore magni asperiores cumque doloribus nemo repellat ab eligendi sed, quas, veritatis consequatur! Ducimus est quidem nemo ea at voluptate natus corporis expedita officia non, voluptatum molestias et cum.</p>
+            </summary>
         </main>
     </div>
     <script src="js/main.js"></script>
